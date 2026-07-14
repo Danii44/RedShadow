@@ -1,0 +1,188 @@
+@forward '../../public/assets/css/bootstrap.min.css';
+@forward '../../public/assets/css/spacing.css';
+@forward '../../public/assets/css/font-awesome-pro.css';
+@forward '../../public/assets/scss/main.scss';
+@forward "react-toastify/dist/ReactToastify.css";
+@import 'react-photo-view/dist/react-photo-view.css';
+
+:root {
+    /* Default = Light Theme */
+    --color-bg-section: #09090b;
+    --color-bg-hero: #f6f6f6;
+}
+
+.cunnet-dark {
+    /* Dark Override */
+    --color-bg-section: #1e1e1e;
+    --color-bg-hero: #0E0F11;
+
+    /* Override Bootstrap body variables for dark theme */
+    --bs-body-bg: #0E0F11;
+    --bs-body-color: #e6e6e6;
+}
+
+/* Ensure body uses dark colors when theme applied */
+body.cunnet-dark {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+
+/* common section background */
+.tp-section-bg {
+    background-color: var(--color-bg-section);
+}
+/* reusable class for hero background */
+.tp-hero-bg {
+    background-color: var(--color-bg-hero);
+}
+
+/* Hero responsiveness: make main hero title scale and ensure enough height */
+.ca-hero-area {
+    min-height: 560px;
+    display: block;
+    overflow: hidden;
+}
+
+.ca-hero-title {
+    font-size: clamp(2.35rem, 3.8vw, 4.35rem);
+    line-height: 0.95;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    max-width: 640px;
+}
+
+.ca-hero-title-wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 700px;
+}
+
+.ca-hero-desc {
+    font-size: clamp(1rem, 1.25vw, 1.08rem);
+    line-height: 1.75;
+    max-width: 610px;
+    color: rgba(230, 230, 230, 0.84);
+}
+
+.ca-hero-dec {
+    max-width: 300px;
+}
+
+.ca-hero-dec p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    color: rgba(230, 230, 230, 0.82);
+}
+
+@media (max-width: 1200px) {
+    .ca-hero-area {
+        min-height: 480px;
+    }
+    .ca-hero-title {
+        font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .ca-hero-area {
+        min-height: 420px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .ca-hero-title {
+        font-size: clamp(1.95rem, 7vw, 2.8rem);
+        line-height: 1.05;
+    }
+    .ca-hero-desc {
+        font-size: 0.98rem;
+    }
+    .ca-hero-left,
+    .ca-hero-dec {
+        padding-top: 0;
+    }
+}
+
+/* Keeps logos proportional by fixing height while preserving natural width */
+.brand-logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+.port-img img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.z-index-high {
+    z-index: 99 !important;
+}
+
+.form-error{
+    font-size: 12px;
+    color: red;
+}
+//product reviews rating style
+.tp-product-details-review-form-rating-icon i {
+    font-size: 16px;
+    color: #d1d1d1;
+    transition: color 0.2s ease;
+}
+
+.tp-product-details-review-form-rating-icon i.active {
+    color: #ffb400;
+}
+
+/* Video modal style */
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-modal-container {
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.video-modal-iframe {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-modal-close:hover {
+    transform: scale(1.2);
+}
+
+.tp-slider-transtion{
+    & .swiper-wrapper{
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+    & .swiper-slide{
+        width: auto;
+    }
+}
