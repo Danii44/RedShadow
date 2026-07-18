@@ -26,7 +26,7 @@ const StudioTeamAndTestimonials = () => {
                                     </h3>
                                     <span className="ca-testimonial-review-count">86+ reviews</span>
                                 </div>
-                                <h2 className="ca-section-title fs-52 text-white mb-115 reveal-text">Helping world-class<br /> company by creative<br /> design.</h2>
+                                <h2 className="ca-section-title fs-52 text-white mb-115 reveal-text">Helping engineering teams<br /> and product makers launch<br /> world-class CAD solutions.</h2>
                                 <div className="ca-testimonial-navigation">
                                     <span className="ca-testimonial-arrow-prev"><i className="fa-solid fa-arrow-left"></i></span>
                                     <span className="ca-testimonial-arrow-next"><i className="fa-solid fa-arrow-right"></i></span>

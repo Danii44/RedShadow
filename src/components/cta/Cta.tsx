@@ -13,7 +13,7 @@ const StudioCtaArea = () => {
                     <div className="row align-content-end">
                         <div className="col-lg-7">
                             <div className="ca-cta-title-wrap p-relative mb-40">
-                                <h2 className="ca-section-title fs-100 text-white lh-1 mb-50 reveal-text">Lets talk about<br /> your project!</h2>
+                                <h2 className="ca-section-title fs-100 text-white lh-1 mb-50 reveal-text">Let's talk about<br /> your CAD or product design project!</h2>
                                 <div className="tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
                                     <SmartLink className="tp-btn tp-btn-red tp-ff-inter" href="/contact-us">
                                         <span>

@@ -22,8 +22,8 @@ const StudioFaqArea = () => {
                             </span>
                             <Image width={131} height={92} className="mb-10" src="/assets/img/faq/faq-thumb.png" alt="thumb" />
 
-                            <h2 className="ca-section-title mb-15">Have Questions</h2>
-                            <p className="tp-faq-dec mb-35">Let us know how we can assist</p>
+                            <h2 className="ca-section-title mb-15">Have Questions about CAD, visualization or delivery?</h2>
+                            <p className="tp-faq-dec mb-35">Tell us about your product design or engineering challenge.</p>
 
                             <SmartLink href="/contact-us" className="tp-btn tp-btn-xl tp-btn-grey tp-btn-switch-animation">
                                 <span className="d-flex align-items-center justify-content-center">

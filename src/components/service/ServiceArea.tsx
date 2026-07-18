@@ -62,8 +62,8 @@ const ServiceArea = () => {
                     <div className="col-xxl-11 col-xl-12">
                         <div className="tp-about-title-wrap mb-30">
                             <h2 className="tp-section-title reveal-text">At Red Shadow Designs, we don&apos;t just deliver visuals<br />
-                                — we build production-ready CAD models, product
-                                visuals and connected web platforms.
+                                — we build production-ready CAD models, technical
+                                product visuals and connected engineering platforms.
                             </h2>
                         </div>
                     </div>

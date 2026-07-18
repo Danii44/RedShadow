@@ -8,8 +8,8 @@ const services = [
     "3D Modeling",
     "CAD Design",
     "Product Visualization",
-    "Web Development",
-    "Engineering Design",
+    "Digital Prototyping",
+    "Manufacturing Web Systems",
 ];
 
 const StudioHero = () => {
@@ -20,13 +20,16 @@ const StudioHero = () => {
                     {/* Left Hero Section */}
                     <div className="col-xl-4 col-lg-5 col-md-5">
                         <div className="ca-hero-left pt-65 pb-30">
-                            <div className="ca-hero-video p-relative">
-                                <video loop muted autoPlay playsInline>
-                                    <source
-                                        src="https://html.aqlova.com/videos/cunnet/ca-video-2.mp4"
-                                        type="video/mp4"
-                                    />
-                                </video>
+                            {/* REPLACED VIDEO WITH NEXT.JS IMAGE */}
+                            <div className="ca-hero-video p-relative" style={{ width: '100%', height: '300px' }}>
+                                <Image
+                                    src="/assets/img/hero/ca/Orbei.webp" 
+                                    alt="Hero Side Visual"
+                                    fill
+                                    priority
+                                    className="img-cover"
+                                    style={{ objectFit: 'cover' }}
+                                />
                             </div>
 
                             <div className="ca-hero-service">
@@ -49,15 +52,14 @@ const StudioHero = () => {
                     <div className="col-xl-5 col-lg-7 col-md-7">
                         <div className="ca-hero-title-wrap pt-50 pb-105">
                             <h2 className="ca-hero-title cd-headline clip tp_title_anim mb-30 no-js">
-                                Precision 3D CAD,
+                                Precision 3D CAD design,
                                 <br />
-                                product visualization
+                                engineering-ready product visuals
                                 <br />
-                                and industrial web platforms
+                                and digital manufacturing platforms
                             </h2>
                             <p className="ca-hero-desc mb-55">
-                                Helping engineering teams, product developers and manufacturers turn concepts into precise CAD workflows,
-                                realistic visuals and production-ready web experiences.
+                                Enabling engineering teams, product developers and industrial brands to move from concept to production with CAD, visualization and connected web systems.
                             </p>
 
                             <SmartLink
@@ -81,11 +83,10 @@ const StudioHero = () => {
                         <div className="ca-hero-dec ml-60 pb-30">
                             <p>
                                 <ArrowIconThree />
-                                We create precision 3D models, CAD<br />
-                                product designs and immersive visual<br />
-                                content, paired with modern web<br />
-                                development for engineering and brand
-                                teams.
+                                We build precision 3D models, CAD<br />
+                                product designs and engineering-grade<br />
+                                visualization, paired with modern web<br />
+                                systems for industrial teams.
                             </p>
                         </div>
                     </div>
@@ -99,7 +100,7 @@ const StudioHero = () => {
                     height={720}
                     data-speed="0.4"
                     className="img-cover scale-up"
-                    src="/assets/img/hero/ca/thumb.jpg"
+                    src="/assets/img/hero/ca/thumb.jpeg"
                     alt="thumb"
                 />
             </div>

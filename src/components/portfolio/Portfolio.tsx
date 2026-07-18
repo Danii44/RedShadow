@@ -17,7 +17,7 @@ const StudioPortfolio = () => {
                             <h2 className="ca-portfolio-main-title tp-ff-sequel-bold-head portfolio-text">
                                 Featured
                                 <span>
-                                    product, CAD and web projects <PortfolioStarIcon />
+                                    CAD, 3D and engineering projects <PortfolioStarIcon />
                                 </span>
                                 <br /> from Red Shadow Designs
                             </h2>
