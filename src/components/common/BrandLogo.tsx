@@ -9,10 +9,10 @@ type BrandLogoProps = {
 };
 
 const BrandLogo = ({
-    logo1Width = 140,
-    logo2Width = 140,
-    logo1Height = 29,
-    logo2Height = 34,
+    logo1Width = 200,
+    logo2Width = 200,
+    logo1Height = 60,
+    logo2Height = 60,
 }: BrandLogoProps) => {
     return (
         <SmartLink href="/">

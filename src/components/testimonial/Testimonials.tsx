@@ -57,21 +57,45 @@ const StudioTeamAndTestimonials = () => {
                 </div>
             </div>
 
-            {/* -- team-area-start -- */}
+            {/* -- team-area-start 
             <div className="ca-team-area pb-120">
                 <div className="container">
                     <div className="ca-team-border pt-150"></div>
                     <div className="row">
                         <div className="col-lg-5">
-                            {/* <div className="ca-team-subtitle-wrap mb-30">
-                                <span className="ca-team-subtitle text-white"><span>[</span> Our achievements <span>]</span></span>
-                            </div> */}
+                           
                         </div>
                         <div className="col-lg-7">
                             <div className="ca-team-title-wrap mb-50">
                                 <h2 className="ca-section-title fs-100 text-white lh-1 reveal-text">Meet the <br /> Founder</h2>
                             </div>
                         </div>
+                        
+                        {
+                            displayTeamItem.map((item) => (
+                                <CommonSingleTeamItem key={item.id} item={item} />
+                            ))
+                        }
+                    </div>
+                </div>
+            </div> -- */}
+            <div className="ca-team-area pb-120">
+                <div className="container">
+                    <div className="ca-team-border pt-150"></div>
+                    {/* 1. Added 'justify-content-center' to align column items horizontally */}
+                    <div className="row justify-content-center">
+                        
+                        {/* Removed the empty col-lg-5 column to prevent it from pushing content to the right */}
+                        
+                        {/* 2. Added 'text-center' to center-align the text inside this column */}
+                        <div className="col-lg-7 text-center">
+                            <div className="ca-team-title-wrap mb-50">
+                                <h2 className="ca-section-title fs-100 text-white lh-1 reveal-text">
+                                    Meet the <br /> Founder
+                                </h2>
+                            </div>
+                        </div>
+                        
                         {/* single team item */}
                         {
                             displayTeamItem.map((item) => (
@@ -81,6 +105,7 @@ const StudioTeamAndTestimonials = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };

@@ -14,9 +14,11 @@ const StudioPortfolio = () => {
                 <div className="row">
                     <div className="col-xxl-6 col-xl-6 offset-xxl-3 offset-xl-4">
                         <div className="ca-portfolio-main-title-wrap">
-                            <h2 className="ca-portfolio-main-title tp-ff-sequel-bold-head portfolio-text">
+                            {/* 32px is noticeably smaller than a default massive H2, but still holds weight */}
+                            <h2 className="ca-portfolio-main-title tp-ff-sequel-bold-head portfolio-text" style={{ fontSize: '48px', lineHeight: '1.2' }}>
                                 Featured
-                                <span>
+                                {/* 20px keeps the sub-text clear but distinctly secondary */}
+                                <span style={{ fontSize: '20px', display: 'block', marginTop: '8px' }}>
                                     CAD, 3D and engineering projects <PortfolioStarIcon />
                                 </span>
                                 <br /> from Red Shadow Designs

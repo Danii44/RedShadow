@@ -11,7 +11,7 @@ const ContactUsFormArea = () => {
                         <div className="col-lg-3 col-md-6">
                             <div className="tp-contact-author-wrap d-flex align-items-center mb-30">
                                 <div className="tp-contact-author-thumb mr-15">
-                                    <Image width={60} height={60} src="/assets/img/contact/author.png" alt="author" />
+                                    <Image width={60} height={60} src="/assets/img/contact/author.jpg" alt="author" />
                                 </div>
                                 <div className="tp-contact-author-content">
                                     <h6>Daniyal Ahmad</h6>
@@ -25,7 +25,9 @@ const ContactUsFormArea = () => {
                                     <Link className="tp-contact-tel" href="tel:+923338917021">+92 333 891 7021</Link>
                                 </div>
                                 <div className="mb-30">
-                                    <Link className="tp-contact-mail" href="mailto:hello@redshadowdesigns.com">hello@redshadowdesigns.com</Link>
+                                    <Link className="tp-contact-mail" href="mailto:hello@redshadowdesigns.com" style={{ fontSize: '24px' }}>
+                                        hello@redshadowdesigns.com
+                                    </Link>
                                 </div>
                                 <div className="tp-contact-address mb-30">
                                     <h4>Address</h4>

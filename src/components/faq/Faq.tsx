@@ -20,7 +20,7 @@ const StudioFaqArea = () => {
                             <span className="ca-team-subtitle text-uppercase d-block mb-15">
                                 <span>[ </span>Our Faq<span> ]</span>
                             </span>
-                            <Image width={131} height={92} className="mb-10" src="/assets/img/faq/faq-thumb.png" alt="thumb" />
+                            
 
                             <h2 className="ca-section-title mb-15">Have Questions about CAD, visualization or delivery?</h2>
                             <p className="tp-faq-dec mb-35">Tell us about your product design or engineering challenge.</p>
