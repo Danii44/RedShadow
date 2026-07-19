@@ -19,11 +19,7 @@ export const SOCIAL_LINKS = [
 ];
 
 export const OFFICE_LOCATIONS = [
-    "New York",
-    "France",
-    "German",
-    "Italy",
-    "Mexico",
+    "Islamabad, Pakistan",
 ];
 
 //shop footer section data

@@ -6,9 +6,9 @@ const AboutUsArea = () => {
                 <div className="row">
                     <div className="col-xxl-8 offset-xxl-2 col-xl-10">
                         <div className="about-us-title-wrap">
-                            <h2 className="about-us-title tp-ff-sequel-medium tp-text-perspective">Delivering creative visuals that<br />
-                                stand out. make your vision a reality
-                                with cunnet.</h2>
+                            <h1 className="about-us-title tp-ff-sequel-medium tp-text-perspective">
+                                Precision 3D CAD<br />&amp;<br />Mechanical Engineering Solutions.
+                            </h1>
                         </div>
                     </div>
                 </div>

@@ -9,14 +9,6 @@ const dataFilePath = path.join(process.cwd(), "src", "data", "portfolio-items.js
 const defaultItems = [
   {
     id: 1,
-    title: "Engineering CAD Platform",
-    description: "A precision-driven product visualization portal for engineering teams.",
-    image: "/assets/img/portfolio/ca/portfolio.jpg",
-    type: "website",
-    tags: ["Next.js", "3D", "UI"],
-  },
-  {
-    id: 2,
     title: "Industrial 3D Showcase",
     description: "A cinematic 3D product showcase with detailed lighting and interaction.",
     image: "/assets/img/portfolio/ca/portfolio-2.jpg",
@@ -44,14 +36,13 @@ async function writeItems(items: unknown[]) {
 
 export async function GET() {
   const items = await readItems();
-  return NextResponse.json(items);
+  return NextResponse.json(items.filter((item) => item?.type === "3d"));
 }
 
 export async function POST(request: Request) {
   const formData = await request.formData();
   const title = String(formData.get("title") || "").trim();
   const description = String(formData.get("description") || "").trim();
-  const type = String(formData.get("type") || "website").trim();
   const imageUrl = String(formData.get("imageUrl") || "").trim();
   const tagsValue = String(formData.get("tags") || "").trim();
   const file = formData.get("image") as File | null;
@@ -78,7 +69,7 @@ export async function POST(request: Request) {
     title,
     description,
     image,
-    type: type === "3d" ? "3d" : "website",
+    type: "3d",
     tags: tagsValue
       ? tagsValue.split(",").map((tag) => tag.trim()).filter(Boolean)
       : [],

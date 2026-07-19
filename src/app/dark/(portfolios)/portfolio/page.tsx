@@ -3,7 +3,7 @@ import PortfolioArea from "@/components/portfolio/PortfolioArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Portfolio - Creative Portfolio Agency Nextjs Template",
+    title: "3D CAD Portfolio | Red Shadow Designs",
 };
 
 const page = () => {

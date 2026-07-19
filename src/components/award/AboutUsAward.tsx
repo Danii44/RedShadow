@@ -2,29 +2,29 @@ import { ArrowIconEight } from "@/svg/ArrowIcons";
 
 const awardsData = [
     {
-        text: "the best in web design.",
-        title: "Web Excellence Awards",
-        year: "2024",
+        text: "for real-world manufacturing constraints.",
+        title: "Manufacturing-Aware Design",
+        year: "01",
     },
     {
-        text: "creativity in UI/UX and web design.",
-        title: "Clutch Top Agencies",
-        year: "2023",
+        text: "built for review, refinement and informed decisions.",
+        title: "Clear Digital Prototypes",
+        year: "02",
     },
     {
-        text: "design across various industries.",
-        title: "Awwwards Honorable Mention",
-        year: "2022",
+        text: "from individual parts to complete assemblies.",
+        title: "Precision in Every Detail",
+        year: "03",
     },
     {
-        text: "startups in tech and business.",
-        title: "Honored for Digital Innovation",
-        year: "2021",
+        text: "that communicate function, form and intent.",
+        title: "Engineering-Grade Visualization",
+        year: "04",
     },
     {
-        text: "branding and digital design.",
-        title: "CSS Design Awards",
-        year: "2020",
+        text: "from concept through production handoff.",
+        title: "A Collaborative Process",
+        year: "05",
     },
 ];
 
@@ -36,10 +36,10 @@ const AboutUsAward = () => {
                     <div className="col-12">
                         <div className="mg-awards-title-wrap mb-15 text-center text-md-start">
                             <h2 className="mg-awards-title tp-ff-sequel-bold-head lh-1 reveal-text">
-                                Awards.
+                                Our
                             </h2>
                             <span className="mg-awards-title-sm tp-ff-sequel-bold-head">
-                                & Recognitions
+                                Engineering Principles
                             </span>
                         </div>
 

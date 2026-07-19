@@ -9,6 +9,9 @@ const TeamDetailsArea = ({ id }: IdProps) => {
     // Find the team that matches the given ID
     const teamInfo = teamData.find((team) => team.id == id);
 
+    // Look specifically for the Fiverr URL in your data array
+    const fiverrUrl = teamInfo?.details.find(item => item.label === "Fiverr Button")?.value;
+
     return (
         <div className="tp-team-details-area tp-team-details-ptb pb-110">
             <div className="container container-1230">
@@ -76,55 +79,81 @@ const TeamDetailsArea = ({ id }: IdProps) => {
                             </div>
 
                             {/* MORE DETAILS */}
-                            <div className="tp-team-details-more mb-50">
+                            <div className="tp-team-details-more mb-30">
                                 <h4 className="tp-team-details-more-title">
                                     More details
                                 </h4>
                                 <ul>
-                                    {teamInfo?.details.map((item, i) => (
-                                        <li key={i}>
-                                            <span>{item.label}:</span> {item.value}
-                                        </li>
-                                    ))}
+                                    {teamInfo?.details
+                                        // Filter it out from the regular list text rows so it doesn't show twice
+                                        .filter(item => item.label !== "Fiverr Button")
+                                        .map((item, i) => (
+                                            <li key={i}>
+                                                <span>{item.label}:</span> {item.value}
+                                            </li>
+                                        ))
+                                    }
                                 </ul>
                             </div>
 
-                            {/* EXPERIENCE */}
-                            <div className="tp-team-details-more mb-50">
-                                <h4 className="tp-team-details-more-title">
-                                    Experience
-                                </h4>
-                                <ul>
-                                    {teamInfo?.experience.map((exp, i) => (
-                                        <li key={i}>{exp}</li>
-                                    ))}
-                                </ul>
-                            </div>
+                            {/* DEDICATED SEPARATE BUTTON (WITHOUT SERVER EVENT HANDLERS) */}
+                            {fiverrUrl && (
+                                <div className="tp-team-details-btn-box mb-50">
+                                    {/* Using global style inject for hover behavior to preserve Server Component nature */}
+                                    <style dangerouslySetInnerHTML={{__html: `
+                                        .fiverr-server-btn {
+                                            display: inline-block;
+                                            background-color: #1dbf73;
+                                            color: #ffffff;
+                                            padding: 14px 32px;
+                                            border-radius: 4px;
+                                            font-weight: bold;
+                                            text-decoration: none;
+                                            letter-spacing: 0.5px;
+                                            box-shadow: 0 4px 6px rgba(29, 191, 115, 0.2);
+                                            transition: background-color 0.2s, transform 0.2s;
+                                        }
+                                        .fiverr-server-btn:hover {
+                                            background-color: #19a865 !important;
+                                            transform: translateY(-1px);
+                                        }
+                                    `}} />
+                                    <a 
+                                        href={fiverrUrl} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="fiverr-server-btn"
+                                    >
+                                        Hire Me on Fiverr
+                                    </a>
+                                </div>
+                            )}
 
                             {/* SKILLS */}
-                            <div className="tp-team-details-progress mb-50">
-                                <h4 className="tp-team-details-more-title mb-35">
-                                    My Skills
-                                </h4>
-
-                                {teamInfo?.skills.map((skill, i) => (
-                                    <div key={i} className="tp-team-details-progress mb-35">
-                                        <h6 className="tp-team-details-progress-title">
-                                            {skill.title}
-                                        </h6>
-                                        <div className="tp-team-details-progress-inner">
-                                            <div
-                                                className="tp-team-details-progress-bar"
-                                                style={{ width: `${skill.value}%` }}
-                                            >
-                                                <h6 className="tp-team-details-progress-counter">
-                                                    {skill.value}%
-                                                </h6>
+                            {teamInfo?.skills && teamInfo.skills.length > 0 && (
+                                <div className="tp-team-details-progress mb-50">
+                                    <h4 className="tp-team-details-more-title mb-35">
+                                        My Skills
+                                    </h4>
+                                    {teamInfo.skills.map((skill, i) => (
+                                        <div key={i} className="tp-team-details-progress mb-35">
+                                            <h6 className="tp-team-details-progress-title">
+                                                {skill.title}
+                                            </h6>
+                                            <div className="tp-team-details-progress-inner">
+                                                <div
+                                                    className="tp-team-details-progress-bar"
+                                                    style={{ width: `${skill.value}%` }}
+                                                >
+                                                    <h6 className="tp-team-details-progress-counter">
+                                                        {skill.value}%
+                                                    </h6>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
-                            </div>
+                                    ))}
+                                </div>
+                            )}
 
                             <div className="tp-team-details-input mb-50">
                                 <h4 className="tp-team-details-more-title mb-35">Think I can help?</h4>

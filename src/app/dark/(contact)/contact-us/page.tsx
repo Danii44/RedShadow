@@ -6,7 +6,7 @@ import ContactUsAbout from "@/components/about/ContactUsAbout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contact Us - Creative Portfolio Agency Nextjs Template",
+    title: "Contact Us | Red Shadow Designs",
 };
 const page = () => {
     return (

@@ -1,17 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Engineering CAD Platform",
-    "description": "A precision-driven product visualization portal for engineering teams.",
-    "image": "/assets/img/portfolio/ca/portfolio.jpg",
-    "type": "website",
-    "tags": [
-      "Next.js",
-      "3D",
-      "UI"
-    ]
-  },
-  {
     "id": 2,
     "title": "Industrial 3D Showcase",
     "description": "A cinematic 3D product showcase with detailed lighting and interaction.",

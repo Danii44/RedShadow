@@ -8,34 +8,22 @@ import BootstrapLoader from "@/layouts/BootstrapLoader";
 import StudioHeader from "@/layouts/headers/Header";
 import AppProvider from "@/provider/AppProvider";
 
-export default function PortfolioDetailsLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function PortfolioDetailsLayout({ children }: { children: React.ReactNode }) {
     return (
         <CursorAndBackgroundProvider>
             <ScrollSmoothProvider>
                 <AnimationWrapper>
                     <AppProvider>
                         <BootstrapLoader>
-                            {/* -- global component -- */}
-                            <div id="magic-cursor" className="cursor-black-bg">
-                                <div id="ball"></div>
-                            </div>
+                            <div id="magic-cursor" className="cursor-black-bg"><div id="ball" /></div>
                             <BackToTop />
                             <HeaderSearch />
                             <StudioHeader />
-                            <div id="smooth-wrapper">
-                                <div id="smooth-content">
-                                    {children}
-                                    <StudioFooter />
-                                </div>
-                            </div>
+                            <div id="smooth-wrapper"><div id="smooth-content">{children}<StudioFooter /></div></div>
                         </BootstrapLoader>
                     </AppProvider>
                 </AnimationWrapper>
-            </ScrollSmoothProvider >
-        </CursorAndBackgroundProvider >
+            </ScrollSmoothProvider>
+        </CursorAndBackgroundProvider>
     );
 }

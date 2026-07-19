@@ -4,39 +4,33 @@ import { serviceDT } from "@/types/service-dt";
 const servicesData: serviceDT[] = [
     {
         id: 1,
-        title: "3D CAD Engineering",
+        title: "Mechanical Engineering",
         image: "/assets/img/service/service.jpg",
-        description: "Engineering-ready CAD models and assemblies for manufacturing and product development.",
+        description: "Engineering support for components, assemblies and product systems built around functional requirements.",
     },
     {
         id: 2,
-        title: "Product Visualization",
+        title: "Precision 3D CAD Design",
         image: "/assets/img/service/service-2.jpg",
-        description: "High-fidelity product visuals that communicate form, function and production intent.",
+        description: "Accurate parts and assemblies developed for design review, documentation and production readiness.",
     },
     {
         id: 3,
-        title: "Mechanical Modeling",
+        title: "Design for Manufacturing (DFM)",
         image: "/assets/img/service/service-3.jpg",
-        description: "Precision part modeling, simulation-ready geometry and detail for engineering teams.",
+        description: "CAD refined around materials, processes, tolerances and efficient manufacture.",
     },
     {
         id: 4,
-        title: "Industrial Web Development",
+        title: "Digital Prototyping",
         image: "/assets/img/service/service-4.jpg",
-        description: "Modern web platforms built for technical brands, engineering services and product launches.",
+        description: "Digital models and prototypes that help validate design direction before production investment.",
     },
     {
         id: 5,
-        title: "Design Systems",
+        title: "Product Visualization",
         image: "/assets/img/service/service-4.jpg",
-        description: "Coherent design systems that scale product portfolios, CAD workflows and digital presence.",
-    },
-    {
-        id: 6,
-        title: "Technical Branding",
-        image: "/assets/img/service/service-4.jpg",
-        description: "Brand identities tailored for engineering, industrial design and product innovation.",
+        description: "Engineering-grade visuals that clearly communicate product form, features and intended use.",
     },
     //agency shop service data start
     {

@@ -4,7 +4,7 @@ import { PortfolioStarIcon } from "@/svg";
 
 const StudioPortfolio = () => {
     //display portfolio item
-    const displayPortfolioItem = portfolioData.slice(4, 11);
+    const displayPortfolioItem = portfolioData.slice(0, 7);
 
     return (
         <div className="ca-portfolio-area portfolio-area pt-160 pb-130">

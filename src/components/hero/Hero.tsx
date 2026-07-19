@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-    "3D Modeling",
-    "CAD Design",
-    "Product Visualization",
+    "Mechanical Engineering",
+    "Precision 3D CAD Design",
+    "Design for Manufacturing (DFM)",
     "Digital Prototyping",
-    "Manufacturing Web Systems",
+    "Product Visualization"
 ];
 
 const StudioHero = () => {
@@ -51,15 +51,16 @@ const StudioHero = () => {
                     {/* Center Hero Section */}
                     <div className="col-xl-5 col-lg-7 col-md-7">
                         <div className="ca-hero-title-wrap pt-50 pb-105">
-                            <h2 className="ca-hero-title cd-headline clip tp_title_anim mb-30 no-js">
-                                Precision 3D CAD design,
+                            <h2 className="ca-hero-title cd-headline clip tp_title_anim mb-30 no-js text-center">
+                                <br />  
+                                Precision 3D CAD
                                 <br />
-                                engineering-ready product visuals
+                                &
                                 <br />
-                                and digital manufacturing platforms
+                                Mechanical Engineering Solutions.
                             </h2>
-                            <p className="ca-hero-desc mb-55">
-                                Enabling engineering teams, product developers and industrial brands to move from concept to production with CAD, visualization and connected web systems.
+                            <p className="ca-hero-desc mb-55 text-center">
+                                Empowering industrial brands and product developers to move from concept to production with DFM-optimized CAD, digital prototyping, and engineering-grade design.
                             </p>
 
                             <SmartLink

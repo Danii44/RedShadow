@@ -34,8 +34,8 @@ const StudioHeader = () => {
                                 <div className="tp-header-right d-flex justify-content-end align-items-center">
                                     <SmartLink className="tp-btn tp-btn-border-black tp-ff-inter d-none d-sm-inline-block" href="/contact-us">
                                         <span>
-                                            <span className="text-1">Say Hello</span>
-                                            <span className="text-2">Say Hello</span>
+                                            <span className="text-1">contact us</span>
+                                            <span className="text-2">contact us</span>
                                         </span>{" "}
                                         <i>
                                             <ButtonArrowIcon />

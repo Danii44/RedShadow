@@ -9,10 +9,10 @@ const ContactUsTopIntro = () => {
                         <div className="col-12">
                             <div className="tp-pd-2-top pb-50 text-center">
                                 <div className="tp-pd-2-categories mb-10 tp_fade_anim" data-delay=".3">
-                                    <span><Link href="/">Website</Link></span>
+                                    <span><Link href="/">Red Shadow Designs</Link></span>
                                     <span>Contact</span>
                                 </div>
-                                <h3 className="tp-section-title fs-92 tp-ff-sequel-semi-bold tp_fade_anim" data-delay=".5">Get In Tuch</h3>
+                                <h1 className="tp-section-title fs-92 tp-ff-sequel-semi-bold tp_fade_anim" data-delay=".5">Get In Touch</h1>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const ContactUsTopIntro = () => {
                         </div>
                         <div className="col-sm-6">
                             <div className="inner-service-banner-scroll smooth mb-10 text-sm-end">
-                                <span className="tp-ff-sequel-semi-bold text-uppercase">10 years of experience</span>
+                                <span className="tp-ff-sequel-semi-bold text-uppercase">Islamabad, Pakistan</span>
                             </div>
                         </div>
                     </div>

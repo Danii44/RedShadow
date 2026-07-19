@@ -62,7 +62,7 @@ const CreativeAgencyFooter = () => {
                             <div className="col-lg-8">
                                 <div className="tp-footer-text text-lg-end tp_fade_anim" data-delay=".7">
                                     <h2 className="tp-footer-bigtext text-uppercase tp-ff-sequel-bold-head">
-                                        <SmartLink href="/contact-us" className="text-scale-anim">Say Hello!</SmartLink>
+                                        <SmartLink href="/contact-us" className="text-scale-anim">contact us!</SmartLink>
                                     </h2>
                                 </div>
                             </div>

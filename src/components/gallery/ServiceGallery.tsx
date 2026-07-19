@@ -10,8 +10,8 @@ const ServiceGallery = () => {
             <div className="container-fluid container-1886">
                 <div className="inner-service-gallery tp-gallery-wrapper">
                     <div className="inner-service-gallery-item about-us-history-title-wrap text-center mb-30">
-                        <h2 className="about-us-history-title tp-ff-sequel-bold-head text-uppercase mb-50">Explore<br /> The Portfolio</h2>
-                        <SmartLink className="tp-btn tp-btn-white tp-ff-inter text-uppercase" href="/portfolio-details">
+                        <h2 className="about-us-history-title tp-ff-sequel-bold-head text-uppercase mb-50">Explore<br /> CAD Projects</h2>
+                        <SmartLink className="tp-btn tp-btn-white tp-ff-inter text-uppercase" href="/portfolio">
                             <span>
                                 <span className="text-1">Discover Now</span>
                                 <span className="text-2">Discover Now</span>

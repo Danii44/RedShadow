@@ -8,9 +8,7 @@ const ContactUsAbout = () => {
                         <div className="cn-contactform-support-bg d-flex align-items-center justify-content-center"
                             style={{ backgroundImage: `url(/assets/img/contact/contact-us-shape.png)` }}>
                             <div className="cn-contactform-support-text text-center">
-                                <span className="reveal-text">Or, you can contact one of our studios
-                                    directly below. We aim to respond
-                                    within 24 hours.</span>
+                                <span className="reveal-text">Our Islamabad office is ready to discuss your next 3D CAD or mechanical engineering project.</span>
                             </div>
                         </div>
                     </div>

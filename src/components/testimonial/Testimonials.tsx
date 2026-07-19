@@ -63,13 +63,13 @@ const StudioTeamAndTestimonials = () => {
                     <div className="ca-team-border pt-150"></div>
                     <div className="row">
                         <div className="col-lg-5">
-                            <div className="ca-team-subtitle-wrap mb-30">
+                            {/* <div className="ca-team-subtitle-wrap mb-30">
                                 <span className="ca-team-subtitle text-white"><span>[</span> Our achievements <span>]</span></span>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-lg-7">
                             <div className="ca-team-title-wrap mb-50">
-                                <h2 className="ca-section-title fs-100 text-white lh-1 reveal-text">Meet the <br /> talented team</h2>
+                                <h2 className="ca-section-title fs-100 text-white lh-1 reveal-text">Meet the <br /> Founder</h2>
                             </div>
                         </div>
                         {/* single team item */}

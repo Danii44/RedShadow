@@ -11,16 +11,16 @@ type AboutFeature = {
 const aboutFeatures: AboutFeature[] = [
     {
         id: 1,
-        title: "Creative-First Approach",
+        title: "Engineering-Led Design",
         description:
-            "Every design, app, or campaign starts with a bold idea rooted in originality and purpose.",
+            "We turn early ideas into purposeful, technically sound CAD models that support confident development decisions.",
         image: "/assets/img/about/thumb-3.jpg",
     },
     {
         id: 2,
-        title: "Tailored Digital Solutions",
+        title: "Production-Ready Detail",
         description:
-            "Every design, app, or campaign starts with a bold idea rooted in originality and purpose.",
+            "Our work is designed around real materials, manufacturing processes, tolerances and assembly requirements.",
         image: "/assets/img/about/thumb-4.jpg",
     },
 ];
@@ -34,7 +34,7 @@ const AboutUsIntro = () => {
                     <div className="col-xxl-10 col-xl-12">
                         <div className="tp-about-title-wrap mb-30">
                             <h2 className="tp-section-title reveal-text">
-                                At Cunnet,we don&apos;t just build website<br/>or campaigns we craft purpose-driven<br/>digital journeys.
+                                Empowering industrial brands and product developers to move from concept to production with DFM-optimized CAD, digital prototyping, and engineering-grade design.
                             </h2>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const AboutUsIntro = () => {
                         <div className="col-lg-4">
                             <div className="tp-about-subtitle-wrap mb-30">
                                 <span className="tp-about-subtitle text-uppercase">
-                                    <ArrowIconSix /> About Us
+                                    <ArrowIconSix /> Red Shadow Designs
                                 </span>
                             </div>
                         </div>

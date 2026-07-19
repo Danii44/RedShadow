@@ -1,41 +1,42 @@
-
-import PortfolioDetailsOverviewTwo from "@/components/overview/PortfolioDetailsOverviewTwo";
-import PortfolioSingleCard from "@/components/portfolio/subComponents/PortfolioSingleCard";
-import PortfolioDetailsIntro from "@/components/portfolio/PortfolioDetailsIntro";
-import PortfolioDetailsStep from "@/components/process/PortfolioDetailsProcess";
-import PortfolioDetailsThumb from "@/components/gallery/PortfolioDetailsThumb";
-import { PageParamsProps } from "@/types/custom-dt";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 import portfolioData from "@/data/portfolio-data";
+import PortfolioSingleCard from "@/components/portfolio/subComponents/PortfolioSingleCard";
 
-export default async function PortfolioDetails(props: PageParamsProps) {
-    const resolvedParams = await props.params;
-    const { id } = resolvedParams;
-    const portfolioItems = portfolioData.slice(43, 45);
+export default async function PortfolioDetails({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const project = portfolioData.find((item) => item.id === Number(id));
+
+    if (!project) notFound();
+
+    const relatedProjects = portfolioData.filter((item) => item.id !== project.id).slice(0, 2);
 
     return (
         <main>
-            <PortfolioDetailsIntro id={id} />
-            <PortfolioDetailsOverviewTwo />
-            <PortfolioDetailsThumb />
-            <PortfolioDetailsStep animateCls="reveal-text" />
-
-            {/* related portfolio item */}
-            <div className="tp-portfolio-area pb-110">
+            <section className="tp-pd-2-ptb tp-pd-3-style pt-120 pb-90">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="mb-25">
-                                <h2 className="tp-portfoliom-m-title reveal-text">Related Project</h2>
-                            </div>
-                        </div>
-                        {portfolioItems.map((item) => (
-                            <div className="col-lg-6" key={item.id}>
-                                <PortfolioSingleCard item={item} />
-                            </div>
-                        ))}
+                    <p className="text-uppercase mb-20">3D CAD Project · {project.year}</p>
+                    <h1
+                        className="tp-pd-3-title tp-ff-sequel-bold-head lh-1 mb-35"
+                        style={{ fontSize: "clamp(2rem, 5vw, 4rem)", maxWidth: 950 }}
+                    >
+                        {project.title}
+                    </h1>
+                    <div className="scale-up-img" style={{ maxWidth: 1100, margin: "0 auto" }}>
+                        <Image src={project.image} alt={project.title} width={1600} height={1000} className="w-100 img-cover" priority />
                     </div>
                 </div>
-            </div>
+            </section>
+            {relatedProjects.length > 0 && (
+                <section className="tp-portfolio-area pb-110">
+                    <div className="container">
+                        <h2 className="tp-portfoliom-m-title mb-40" style={{ fontSize: "clamp(1.75rem, 3vw, 2.75rem)" }}>More 3D CAD Projects</h2>
+                        <div className="row">
+                            {relatedProjects.map((item) => <div className="col-lg-6" key={item.id}><PortfolioSingleCard item={item} /></div>)}
+                        </div>
+                    </div>
+                </section>
+            )}
         </main>
     );
 }

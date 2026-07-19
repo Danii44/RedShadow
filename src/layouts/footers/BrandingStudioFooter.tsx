@@ -61,7 +61,7 @@ const BrandingStudioFooter = () => {
                             <div className="col-12">
                                 <div className="tp-title-anim no-animrtion text-center fix pb-15 tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
                                     <h2 className="tp-title-anim-inner cs-footer-bigtitle justify-content-center tp-ff-sequel-heavy-disp text-uppercase text-white">
-                                        <SmartLink className="tp-title-text" href="/contact-us">Say Hello!</SmartLink>
+                                        <SmartLink className="tp-title-text" href="/contact-us">contact us!</SmartLink>
                                     </h2>
                                 </div>
                             </div>

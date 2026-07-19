@@ -9,8 +9,8 @@ const ServiceIntroBanner = () => {
                     <div className="row">
                         <div className="col-xxl-8 offset-xxl-2 col-xl-10">
                             <div className="inner-service-banner-title-wrap tp_fade_anim" data-delay=".3">
-                                <h2 className="about-us-title tp-ff-sequel-medium">Delivering creative visuals that<br />
-                                    stand out make your vision.</h2>
+                                <h1 className="about-us-title tp-ff-sequel-medium">Precision 3D CAD<br />
+                                    &amp; Mechanical Engineering Solutions.</h1>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const ServiceIntroBanner = () => {
                         </div>
                         <div className="col-sm-6">
                             <div className="inner-service-banner-scroll smooth mb-10 text-sm-end">
-                                <span className="tp-ff-sequel-semi-bold text-uppercase">10 years of experience</span>
+                                <span className="tp-ff-sequel-semi-bold text-uppercase">From concept to production</span>
                             </div>
                         </div>
                     </div>

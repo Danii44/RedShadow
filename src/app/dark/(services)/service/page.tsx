@@ -1,12 +1,11 @@
 import ServiceIntroBanner from "@/components/banner/ServiceIntroBanner";
-import ServicePricing from "@/components/pricing/ServicePricing";
 import ServiceGallery from "@/components/gallery/ServiceGallery";
 import PageBanner from "@/components/banner/PageBanner";
-import ServiceArea from "@/components/service/ServiceArea";
+import EngineeringServices from "@/components/service/EngineeringServices";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Service - Creative Portfolio Agency Nextjs Template",
+    title: "Engineering & CAD Services | Red Shadow Designs",
 };
 
 const page = () => {
@@ -14,9 +13,8 @@ const page = () => {
         <main>
             <ServiceIntroBanner />
             <PageBanner />
-            <ServiceArea />
+            <EngineeringServices />
             <ServiceGallery />
-            <ServicePricing />
         </main>
     );
 };
