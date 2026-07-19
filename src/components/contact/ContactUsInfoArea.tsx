@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const contactInfo = {
     title: "Islamabad Office",
-    image: "/assets/img/contact/contact-us-thumb-1.jpg",
+    image: "/assets/img/contact/contact-us-thumb-1.png",
 };
 
 const ContactUsInfoArea = () => {
@@ -16,7 +16,7 @@ const ContactUsInfoArea = () => {
                                 className="tp-contact-us-content text-center"
                             >
                                 <div className="tp-contact-us-thumb d-flex justify-content-center">
-                                    <Image width={378} height={240} src={contactInfo.image} alt={contactInfo.title} />
+                                    <Image width={300} height={500} src={contactInfo.image} alt={contactInfo.title} />
                                 </div>
 
                                 <div className="tp-contact-us-bottom">

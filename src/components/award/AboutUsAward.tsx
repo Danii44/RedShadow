@@ -35,7 +35,7 @@ const AboutUsAward = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="mg-awards-title-wrap mb-15 text-center text-md-start">
-                            <h2 className="mg-awards-title tp-ff-sequel-bold-head lh-1 reveal-text">
+                            <h2 className="mg-awards-title tp-ff-sequel-bold-head reveal-text" style={{ fontSize: "clamp(2.25rem, 4.5vw, 3.75rem)", lineHeight: 1.15 }}>
                                 Our
                             </h2>
                             <span className="mg-awards-title-sm tp-ff-sequel-bold-head">

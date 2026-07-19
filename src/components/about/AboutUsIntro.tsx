@@ -31,14 +31,14 @@ const AboutUsIntro = () => {
             <div className="container">
                 {/* Title */}
                 <div className="row align-items-end">
-                    <div className="col-xxl-10 col-xl-12">
-                        <div className="tp-about-title-wrap mb-30">
-                            <h2 className="tp-section-title reveal-text">
-                                Empowering industrial brands and product developers to move from concept to production with DFM-optimized CAD, digital prototyping, and engineering-grade design.
-                            </h2>
-                        </div>
-                    </div>
-                </div>
+    <div className="col-xxl-10 col-xl-12">
+        <div className="tp-about-title-wrap mb-30">
+            <h2 className="tp-section-title reveal-text" style={{ fontSize: "clamp(2.25rem, 4.5vw, 3.75rem)", lineHeight: 1.25, fontWeight: 400 }}>
+                Empowering industrial brands and product developers to move from concept to production with DFM-optimized CAD, digital prototyping, and engineering-grade design.
+            </h2>
+        </div>
+    </div>
+</div>
 
                 {/* Content */}
                 <div className="tp-about-border mt-20 pt-55">

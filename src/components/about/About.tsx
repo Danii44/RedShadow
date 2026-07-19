@@ -8,7 +8,8 @@ const StudioAbout = () => {
                 <div className="row justify-content-center">
                     <div className="col-xxl-10">
                         <div className="ca-about-title-wrap text-center">
-                            <h2 className="ca-section-title ca-about-title reveal-text mb-50">At Red Shadow Designs, we deliver engineering-grade 3D CAD, product visualization and digital systems that help manufacturers, product teams and engineering firms move from concept to production.
+                            <h2 className="ca-section-title ca-about-title reveal-text mb-50" style={{ fontSize: "clamp(2.25rem, 4.5vw, 3.75rem)", lineHeight: 1.25, fontWeight: 400 }}>
+                                At Red Shadow Designs, we deliver engineering-grade 3D CAD, product visualization and digital systems that help manufacturers, product teams and engineering firms move from concept to production.
                             </h2>
                             <div className="tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
                                 <SmartLink href="/about-us" className="tp-btn tp-btn-xl tp-btn-grey tp-btn-switch-animation">
