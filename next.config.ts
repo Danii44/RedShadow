@@ -3,7 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./src/utils/netlifyImageLoader.ts",
+    deviceSizes: [400, 800, 1200],
+    imageSizes: [],
   },
   async rewrites() {
     // The site pages are organized under `app/dark`, but the public navigation
