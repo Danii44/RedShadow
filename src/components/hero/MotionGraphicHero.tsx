@@ -44,6 +44,7 @@ const MotionGraphicHero = () => {
                             height={802}
                             src="/assets/img/hero/mg/thumb.jpg"
                             alt="thumb"
+                            priority
                         />
                     </div>
 

@@ -37,6 +37,7 @@ const CreativeAgencyHero = () => {
                                 alt={item.alt}
                                 fill
                                 style={{ objectFit: "cover" }}
+                                priority={item.id < 2}
                             />
                     </div>
                 ))}
