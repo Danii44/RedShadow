@@ -103,6 +103,7 @@ const StudioHero = () => {
                     className="img-cover scale-up"
                     src="/assets/img/hero/ca/thumb.jpeg"
                     alt="thumb"
+                    priority
                 />
             </div>
         </div>

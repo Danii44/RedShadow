@@ -6,9 +6,11 @@ import Image from "next/image";
 const MagneticImage = ({
     src,
     delay,
+    priority,
 }: {
     src: string;
     delay: number;
+    priority?: boolean;
 }) => (
     <div
         className="mp-hero-magnetic-item mb-20 tp_fade_anim"
@@ -23,6 +25,7 @@ const MagneticImage = ({
             src={src}
             className="mp-hero-magnetic-image"
             alt="magnetic image"
+            priority={priority}
         />
     </div>
 );
@@ -105,7 +108,7 @@ const ModernAgencyHero = () => {
                             <div className="mp-hero-magnetic">
                                 <div className="mp-hero-magnetic-image-wrap d-flex flex-wrap flex-md-nowrap gap-3">
                                     {magneticImages.map((src, idx) => (
-                                        <MagneticImage key={idx} src={src} delay={0.4 + idx * 0.1} />
+                                        <MagneticImage key={idx} src={src} delay={0.4 + idx * 0.1} priority={idx < 2} />
                                     ))}
                                 </div>
                             </div>

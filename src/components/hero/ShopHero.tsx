@@ -44,7 +44,7 @@ const ShopHero = () => {
                             <div key={id} className={col}>
                                 <div className={`shop-hero-item mb-20 p-relative ${extraClass ?? ""}`}>
                                     <div className="shop-hero-thumb fix">
-                                        <Image width={1856} height={750} className="img-fluid w-100" src={image} alt="shop hero" />
+                                        <Image width={1856} height={750} className="img-fluid w-100" src={image} alt="shop hero" priority={id <= 2} />
                                     </div>
                                     <div className="shop-hero-content">
                                         <h2 className="shop-hero-title tp-title-anim fix d-inline-block tp-ff-jost fw-600 mb-5">
